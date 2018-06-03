@@ -7,12 +7,26 @@
 //
 
 import UIKit
+import CoreMotion
 
 class ViewController: UIViewController {
+    
+    var motionManager = CMMotionManager()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        motionManager.accelerometerUpdateInterval = 0.1
+        
+        motionManager.startAccelerometerUpdates(to: OperationQueue.current!) {(data, error) in
+            if let myData = data {
+                print(data)
+            }
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {
