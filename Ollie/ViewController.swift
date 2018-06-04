@@ -12,7 +12,9 @@ import CoreMotion
 class ViewController: UIViewController {
     
     var motionManager = CMMotionManager()
-
+    
+    @IBOutlet weak var stopButton: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -22,18 +24,34 @@ class ViewController: UIViewController {
         motionManager.accelerometerUpdateInterval = 0.1
         
         motionManager.startAccelerometerUpdates(to: OperationQueue.current!) {(data, error) in
-            if let myData = data {
-                print(data)
+            if let accData = data {
+                //  THE ALGO //
+                print(accData)
+                if abs(accData.acceleration.x + accData.acceleration.z) > 0.75 {
+                    self.stopHelper();
+                }
+                //  END ALGO //
             }
         }
         
     }
+    
+    func setTimeout(_ delay:TimeInterval, block:@escaping ()->Void) -> Timer {
+        return Timer.scheduledTimer(timeInterval: delay, target: BlockOperation(block: block), selector: #selector(Operation.main), userInfo: nil, repeats: false)
+    }
 
+    func stopHelper() {
+        self.stopButton.textColor = UIColor(red: 255.0, green: 0.0, blue: 0, alpha: 1.0)
+        
+        let handle = setTimeout(2.0, block: { () -> Void in
+            self.stopButton.textColor = UIColor(red: 0.0, green: 0.0, blue: 0, alpha: 1.0)
+        })
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
 
 }
 
