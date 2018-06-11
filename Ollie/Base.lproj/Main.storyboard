@@ -37,8 +37,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="◼︎" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EAn-UQ-ghN">
-                                <rect key="frame" x="125" y="243.5" width="125" height="179.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="150"/>
+                                <rect key="frame" x="179" y="321.5" width="17" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>

@@ -25,12 +25,15 @@ class ViewController: UIViewController {
         
         motionManager.startAccelerometerUpdates(to: OperationQueue.current!) {(data, error) in
             if let accData = data {
-                //  THE ALGO //
-                print(accData)
-                if abs(accData.acceleration.x + accData.acceleration.z) > 0.75 {
+                // THE ALGO //
+                // print(accData)
+                let accelerationXYZ = abs(accData.acceleration.x + accData.acceleration.z + accData.acceleration.y) - 1
+                self.stopButton.text = String(round(1000*accelerationXYZ)/1000)
+
+                if accelerationXYZ > 0.75 {
                     self.stopHelper();
                 }
-                //  END ALGO //
+                // END ALGO //
             }
         }
         
