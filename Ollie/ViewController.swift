@@ -8,16 +8,20 @@
 
 import UIKit
 import CoreMotion
+import Firebase
+import FirebaseAuth
+import FirebaseDatabase
 
 class ViewController: UIViewController {
     
     var motionManager = CMMotionManager()
+    var refUsers: DatabaseReference!
     
     @IBOutlet weak var stopButton: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        refUsers = Database.database().reference().child("users")
     }
     
     override func viewDidAppear(_ animated: Bool) {

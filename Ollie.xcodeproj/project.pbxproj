@@ -13,6 +13,8 @@
 		3CD6223F20CE99BE002A465A /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD6223E20CE99BE002A465A /* GradientView.swift */; };
 		3CD6224820CEB3CB002A465A /* AvenirNext.ttc in Resources */ = {isa = PBXBuildFile; fileRef = 3CD6224720CEB3CA002A465A /* AvenirNext.ttc */; };
 		3CD6224A20CEC181002A465A /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD6224920CEC181002A465A /* CustomButton.swift */; };
+		3CD6224C20CFCA88002A465A /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD6224B20CFCA88002A465A /* SignInViewController.swift */; };
+		3CD6224E20CFDE2A002A465A /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD6224D20CFDE2A002A465A /* ResetPasswordViewController.swift */; };
 		D7A06F1020C43E9E00CADA81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A06F0F20C43E9E00CADA81 /* AppDelegate.swift */; };
 		D7A06F1220C43E9E00CADA81 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A06F1120C43E9E00CADA81 /* ViewController.swift */; };
 		D7A06F1520C43E9E00CADA81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7A06F1320C43E9E00CADA81 /* Main.storyboard */; };
@@ -27,6 +29,8 @@
 		3CD6223E20CE99BE002A465A /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		3CD6224720CEB3CA002A465A /* AvenirNext.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = AvenirNext.ttc; sourceTree = "<group>"; };
 		3CD6224920CEC181002A465A /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		3CD6224B20CFCA88002A465A /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		3CD6224D20CFDE2A002A465A /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
 		578D7FE41C5391F67D4935CF /* Pods-Ollie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ollie.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ollie/Pods-Ollie.debug.xcconfig"; sourceTree = "<group>"; };
 		D7A06F0C20C43E9E00CADA81 /* Ollie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ollie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7A06F0F20C43E9E00CADA81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -100,6 +104,8 @@
 				3C6256A320CE6CF00070492E /* SignUpViewController.swift */,
 				3CD6223E20CE99BE002A465A /* GradientView.swift */,
 				3CD6224920CEC181002A465A /* CustomButton.swift */,
+				3CD6224B20CFCA88002A465A /* SignInViewController.swift */,
+				3CD6224D20CFDE2A002A465A /* ResetPasswordViewController.swift */,
 			);
 			path = Ollie;
 			sourceTree = "<group>";
@@ -234,9 +240,11 @@
 			files = (
 				3C6256A420CE6CF00070492E /* SignUpViewController.swift in Sources */,
 				D7A06F1220C43E9E00CADA81 /* ViewController.swift in Sources */,
+				3CD6224C20CFCA88002A465A /* SignInViewController.swift in Sources */,
 				3CD6223F20CE99BE002A465A /* GradientView.swift in Sources */,
 				D7A06F1020C43E9E00CADA81 /* AppDelegate.swift in Sources */,
 				3CD6224A20CEC181002A465A /* CustomButton.swift in Sources */,
+				3CD6224E20CFDE2A002A465A /* ResetPasswordViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
