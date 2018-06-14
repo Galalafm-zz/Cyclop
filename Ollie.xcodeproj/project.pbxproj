@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D76BC2E320D1D45E002EFF00 /* SimpleBluetoothIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76BC2E220D1D45E002EFF00 /* SimpleBluetoothIO.swift */; };
+		D76BC2E620D1D508002EFF00 /* NSData+Int8.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76BC2E520D1D508002EFF00 /* NSData+Int8.swift */; };
 		D7A06F1020C43E9E00CADA81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A06F0F20C43E9E00CADA81 /* AppDelegate.swift */; };
 		D7A06F1220C43E9E00CADA81 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A06F1120C43E9E00CADA81 /* ViewController.swift */; };
 		D7A06F1520C43E9E00CADA81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7A06F1320C43E9E00CADA81 /* Main.storyboard */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D76BC2E220D1D45E002EFF00 /* SimpleBluetoothIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleBluetoothIO.swift; sourceTree = "<group>"; };
+		D76BC2E520D1D508002EFF00 /* NSData+Int8.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSData+Int8.swift"; sourceTree = "<group>"; };
 		D7A06F0C20C43E9E00CADA81 /* Ollie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ollie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7A06F0F20C43E9E00CADA81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D7A06F1120C43E9E00CADA81 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,12 +58,14 @@
 		D7A06F0E20C43E9E00CADA81 /* Ollie */ = {
 			isa = PBXGroup;
 			children = (
+				D76BC2E520D1D508002EFF00 /* NSData+Int8.swift */,
 				D7A06F0F20C43E9E00CADA81 /* AppDelegate.swift */,
 				D7A06F1120C43E9E00CADA81 /* ViewController.swift */,
 				D7A06F1320C43E9E00CADA81 /* Main.storyboard */,
 				D7A06F1620C43EA000CADA81 /* Assets.xcassets */,
 				D7A06F1820C43EA000CADA81 /* LaunchScreen.storyboard */,
 				D7A06F1B20C43EA000CADA81 /* Info.plist */,
+				D76BC2E220D1D45E002EFF00 /* SimpleBluetoothIO.swift */,
 			);
 			path = Ollie;
 			sourceTree = "<group>";
@@ -96,6 +102,11 @@
 				TargetAttributes = {
 					D7A06F0B20C43E9E00CADA81 = {
 						CreatedOnToolsVersion = 9.4;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -135,6 +146,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D76BC2E320D1D45E002EFF00 /* SimpleBluetoothIO.swift in Sources */,
+				D76BC2E620D1D508002EFF00 /* NSData+Int8.swift in Sources */,
 				D7A06F1220C43E9E00CADA81 /* ViewController.swift in Sources */,
 				D7A06F1020C43E9E00CADA81 /* AppDelegate.swift in Sources */,
 			);

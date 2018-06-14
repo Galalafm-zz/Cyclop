@@ -57,7 +57,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="stopButton" destination="EAn-UQ-ghN" id="JcA-Ji-rhd"/>
+                        <outlet property="stopButton" destination="EAn-UQ-ghN" id="Gbo-PH-TBQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

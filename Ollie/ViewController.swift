@@ -9,15 +9,17 @@
 import UIKit
 import CoreMotion
 
+
 class ViewController: UIViewController {
     
+    var simpleBluetoothIO: SimpleBluetoothIO!
     var motionManager = CMMotionManager()
     
     @IBOutlet weak var stopButton: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        simpleBluetoothIO = SimpleBluetoothIO(serviceUUID: "6e400001-b5a3-f393-e0a9-e50e24dcca9e", delegate: self)
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -28,10 +30,11 @@ class ViewController: UIViewController {
                 // THE ALGO //
                 // print(accData)
                 let accelerationXYZ = abs(accData.acceleration.x + accData.acceleration.z + accData.acceleration.y) - 1
-                self.stopButton.text = String(round(1000*accelerationXYZ)/1000)
-
+                self.stopButton.text = String(round(1000*accelerationXYZ)/1000);
+                
                 if accelerationXYZ > 0.75 {
                     self.stopHelper();
+                    self.simpleBluetoothIO.writeValue(value: 65)
                 }
                 // END ALGO //
             }
@@ -56,5 +59,15 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+}
+
+extension ViewController: SimpleBluetoothIODelegate {
+    func simpleBluetoothIO(simpleBluetoothIO: SimpleBluetoothIO, didReceiveValue value: Int8) {
+        if value > 0 {
+            view.backgroundColor = UIColor.yellow
+        } else {
+            view.backgroundColor = UIColor.black
+        }
+    }
 }
 
