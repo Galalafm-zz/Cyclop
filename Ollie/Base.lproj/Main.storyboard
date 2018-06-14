@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -19,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zUE-xB-hNi">
-                                <rect key="frame" x="49" y="170" width="277.5" height="74"/>
+                                <rect key="frame" x="66.5" y="170" width="277.5" height="74"/>
                                 <string key="text">Quel type de véhicule 
 utilisez-vous ?</string>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="27"/>
@@ -27,7 +26,7 @@ utilisez-vous ?</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nlr-kI-xzm" customClass="CustomButton2" customModule="Ollie" customModuleProvider="target">
-                                <rect key="frame" x="50" y="300" width="95" height="130"/>
+                                <rect key="frame" x="50" y="300" width="130" height="130"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="130" id="9zn-Th-MR8"/>
                                     <constraint firstAttribute="height" constant="130" id="SRV-qo-KEI"/>
@@ -41,7 +40,7 @@ utilisez-vous ?</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EL4-sD-dRJ" customClass="CustomButton2" customModule="Ollie" customModuleProvider="target">
-                                <rect key="frame" x="195" y="300" width="130" height="130"/>
+                                <rect key="frame" x="230" y="300" width="130" height="130"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="130" id="Yal-BF-U5j"/>
                                     <constraint firstAttribute="height" constant="130" id="qGC-Kn-8pp"/>
@@ -56,7 +55,7 @@ utilisez-vous ?</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="auS-Nb-t0V" customClass="CustomButton2" customModule="Ollie" customModuleProvider="target">
-                                <rect key="frame" x="195" y="480" width="130" height="130"/>
+                                <rect key="frame" x="230" y="480" width="130" height="130"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="130" id="Vv1-4j-gHQ"/>
                                     <constraint firstAttribute="width" constant="130" id="yeZ-HS-u6S"/>
@@ -71,7 +70,7 @@ utilisez-vous ?</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C5N-zK-QDv" customClass="CustomButton2" customModule="Ollie" customModuleProvider="target">
-                                <rect key="frame" x="50" y="480" width="95" height="130"/>
+                                <rect key="frame" x="50" y="480" width="130" height="130"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="130" id="K4i-La-5IQ"/>
                                     <constraint firstAttribute="height" constant="130" id="hmW-Ho-Klz"/>
@@ -526,6 +525,90 @@ utilisez-vous ?</string>
             </objects>
             <point key="canvasLocation" x="1325.5999999999999" y="-647.22638680659679"/>
         </scene>
+        <!--Help View Controller-->
+        <scene sceneID="U1b-sL-CCh">
+            <objects>
+                <viewController storyboardIdentifier="Help" useStoryboardIdentifierAsRestorationIdentifier="YES" id="iB5-Pm-Dec" customClass="HelpViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hUH-Jo-o11" customClass="GradientView" customModule="Ollie" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vch-7v-uI1">
+                                <rect key="frame" x="0.0" y="175" width="375" height="74"/>
+                                <string key="text">Vous ne voyez pas 
+votre bandeau ?</string>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="27"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ovf-Am-xLd">
+                                <rect key="frame" x="65" y="314" width="277" height="41"/>
+                                <string key="text">Éteignez votre smartphone, puis
+rallumez le.</string>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Assurez-vous qu’il se trouve a proximité de votre bandeau Cyclop." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eS8-qh-Zwc">
+                                <rect key="frame" x="65" y="397" width="277" height="55"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="khA-Lo-7pu">
+                                <rect key="frame" x="68" y="504" width="277" height="41"/>
+                                <string key="text">Assurez-vous que la fonction Bluetooth
+est activée (Réglages &gt;Bluetooth). </string>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nQ6-mF-ob4">
+                                <rect key="frame" x="83" y="606" width="208" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Toujours besoin d'aide ? ">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="15" name="AvenirNext-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="FAQ">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="15" name="AvenirNext-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            <integer key="NSUnderline" value="1"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ovf-Am-xLd" firstAttribute="top" secondItem="vch-7v-uI1" secondAttribute="bottom" constant="65" id="5kR-EP-fMu"/>
+                            <constraint firstItem="khA-Lo-7pu" firstAttribute="top" secondItem="eS8-qh-Zwc" secondAttribute="bottom" constant="42" id="LGg-4J-5Jx"/>
+                            <constraint firstItem="vch-7v-uI1" firstAttribute="top" secondItem="MjR-sd-4SW" secondAttribute="top" constant="155" id="VFn-sk-xyo"/>
+                            <constraint firstItem="eS8-qh-Zwc" firstAttribute="top" secondItem="Ovf-Am-xLd" secondAttribute="bottom" constant="42" id="feT-3c-AcH"/>
+                            <constraint firstItem="khA-Lo-7pu" firstAttribute="top" secondItem="eS8-qh-Zwc" secondAttribute="bottom" constant="42" id="gKd-5D-Jbd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="MjR-sd-4SW"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="SecondColor">
+                                <color key="value" red="1" green="0.55294117647058827" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="FirstColor">
+                                <color key="value" red="0.97647058823529409" green="0.85490196078431369" blue="0.19215686274509805" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tKB-3q-Ccw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2068" y="-640.02998500749629"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -597,6 +680,6 @@ utilisez-vous ?</string>
         <image name="trotti2" width="240" height="240"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="eLX-cr-Qw0"/>
+        <segue reference="mNc-1S-DN2"/>
     </inferredMetricsTieBreakers>
 </document>
