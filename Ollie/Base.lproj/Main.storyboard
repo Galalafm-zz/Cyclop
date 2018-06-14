@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hhE-o5-cXn">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="udb-Pz-RkH">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,6 +10,129 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Vehicules View Controller-->
+        <scene sceneID="Vkw-ij-xyS">
+            <objects>
+                <viewController storyboardIdentifier="Vehicules" useStoryboardIdentifierAsRestorationIdentifier="YES" id="udb-Pz-RkH" customClass="VehiculesViewController" customModule="Ollie" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PP8-Bh-PJe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zUE-xB-hNi">
+                                <rect key="frame" x="49" y="170" width="277.5" height="74"/>
+                                <string key="text">Quel type de véhicule 
+utilisez-vous ?</string>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="27"/>
+                                <color key="textColor" red="1" green="0.55294117649999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nlr-kI-xzm" customClass="CustomButton2" customModule="Ollie" customModuleProvider="target">
+                                <rect key="frame" x="50" y="300" width="95" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="9zn-Th-MR8"/>
+                                    <constraint firstAttribute="height" constant="130" id="SRV-qo-KEI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="2"/>
+                                <state key="normal" image="skate"/>
+                                <state key="selected" image="skate2"/>
+                                <state key="highlighted" backgroundImage="Card"/>
+                                <connections>
+                                    <action selector="ChooseSkateAction:" destination="udb-Pz-RkH" eventType="touchUpInside" id="jRZ-z0-8Fh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EL4-sD-dRJ" customClass="CustomButton2" customModule="Ollie" customModuleProvider="target">
+                                <rect key="frame" x="195" y="300" width="130" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="Yal-BF-U5j"/>
+                                    <constraint firstAttribute="height" constant="130" id="qGC-Kn-8pp"/>
+                                </constraints>
+                                <state key="normal" image="hover">
+                                    <attributedString key="attributedTitle"/>
+                                </state>
+                                <state key="selected" image="hover2"/>
+                                <state key="highlighted" backgroundImage="Card"/>
+                                <connections>
+                                    <action selector="ChooseHoverAction:" destination="udb-Pz-RkH" eventType="touchUpInside" id="5RB-u7-IsG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="auS-Nb-t0V" customClass="CustomButton2" customModule="Ollie" customModuleProvider="target">
+                                <rect key="frame" x="195" y="480" width="130" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="Vv1-4j-gHQ"/>
+                                    <constraint firstAttribute="width" constant="130" id="yeZ-HS-u6S"/>
+                                </constraints>
+                                <state key="normal" image="gyro">
+                                    <attributedString key="attributedTitle"/>
+                                </state>
+                                <state key="selected" image="gyro2"/>
+                                <state key="highlighted" backgroundImage="Card"/>
+                                <connections>
+                                    <action selector="ChooseGyroAction:" destination="udb-Pz-RkH" eventType="touchUpInside" id="t5W-Wp-Ukb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C5N-zK-QDv" customClass="CustomButton2" customModule="Ollie" customModuleProvider="target">
+                                <rect key="frame" x="50" y="480" width="95" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="K4i-La-5IQ"/>
+                                    <constraint firstAttribute="height" constant="130" id="hmW-Ho-Klz"/>
+                                </constraints>
+                                <state key="normal" image="trotti">
+                                    <attributedString key="attributedTitle"/>
+                                </state>
+                                <state key="selected" image="trotti2">
+                                    <attributedString key="attributedTitle"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="Card"/>
+                                <connections>
+                                    <action selector="ChooseTrottiAction:" destination="udb-Pz-RkH" eventType="touchUpInside" id="8dR-bz-s02"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="C5N-zK-QDv" firstAttribute="leading" secondItem="sQC-Ou-ZLE" secondAttribute="leading" constant="50" id="1GX-WS-s2r"/>
+                            <constraint firstItem="auS-Nb-t0V" firstAttribute="top" secondItem="EL4-sD-dRJ" secondAttribute="bottom" constant="50" id="1Of-1h-71g"/>
+                            <constraint firstItem="zUE-xB-hNi" firstAttribute="centerX" secondItem="PP8-Bh-PJe" secondAttribute="centerX" id="JTJ-pe-pz0"/>
+                            <constraint firstItem="nlr-kI-xzm" firstAttribute="top" secondItem="zUE-xB-hNi" secondAttribute="bottom" constant="56" id="OnB-SN-GkD"/>
+                            <constraint firstItem="sQC-Ou-ZLE" firstAttribute="trailing" secondItem="auS-Nb-t0V" secondAttribute="trailing" constant="50" id="YBr-ci-YOl"/>
+                            <constraint firstItem="zUE-xB-hNi" firstAttribute="top" secondItem="sQC-Ou-ZLE" secondAttribute="top" constant="150" id="hKL-bz-JMb"/>
+                            <constraint firstItem="auS-Nb-t0V" firstAttribute="leading" secondItem="C5N-zK-QDv" secondAttribute="trailing" constant="50" id="icV-pN-UY4"/>
+                            <constraint firstItem="nlr-kI-xzm" firstAttribute="leading" secondItem="sQC-Ou-ZLE" secondAttribute="leading" constant="50" id="iug-Ta-4Rg"/>
+                            <constraint firstItem="C5N-zK-QDv" firstAttribute="top" secondItem="nlr-kI-xzm" secondAttribute="bottom" constant="50" id="n4M-Kt-zHW"/>
+                            <constraint firstItem="EL4-sD-dRJ" firstAttribute="top" secondItem="zUE-xB-hNi" secondAttribute="bottom" constant="56" id="uUv-kx-vra"/>
+                            <constraint firstItem="EL4-sD-dRJ" firstAttribute="leading" secondItem="nlr-kI-xzm" secondAttribute="trailing" constant="50" id="wgv-ef-Q2l"/>
+                            <constraint firstItem="sQC-Ou-ZLE" firstAttribute="trailing" secondItem="EL4-sD-dRJ" secondAttribute="trailing" constant="50" id="yzq-AZ-NwN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="sQC-Ou-ZLE"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="FirstColor">
+                                <color key="value" red="0.97647058819999999" green="0.85490196080000003" blue="0.19215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="SecondColor">
+                                <color key="value" red="1" green="0.55294117649999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aKa-XT-Tn8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2192.8000000000002" y="-645.42728635682158"/>
+        </scene>
+        <!--Pair Select View Controller-->
+        <scene sceneID="PT0-lN-RrN">
+            <objects>
+                <viewController storyboardIdentifier="PairSelect" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6Zz-5F-1qp" customClass="PairSelectViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nEO-ZR-aog">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="npY-xg-LU1"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TRO-Dg-kwI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2899" y="-643"/>
+        </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="D4Q-VF-kAp">
             <objects>
@@ -459,10 +582,19 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Card" width="128" height="128"/>
         <image name="Line" width="342" height="2"/>
         <image name="Logo" width="510" height="168"/>
         <image name="User" width="26" height="26"/>
+        <image name="gyro" width="256" height="256"/>
+        <image name="gyro2" width="240" height="240"/>
+        <image name="hover" width="256" height="256"/>
+        <image name="hover2" width="240" height="240"/>
         <image name="lock" width="26" height="32"/>
+        <image name="skate" width="256" height="256"/>
+        <image name="skate2" width="240" height="240"/>
+        <image name="trotti" width="256" height="256"/>
+        <image name="trotti2" width="240" height="240"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="eLX-cr-Qw0"/>
