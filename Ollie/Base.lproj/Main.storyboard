@@ -607,7 +607,7 @@ est activée (Réglages &gt;Bluetooth). </string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tKB-3q-Ccw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2068" y="-640.02998500749629"/>
+            <point key="canvasLocation" x="2193" y="29"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
